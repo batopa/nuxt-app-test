@@ -60,7 +60,7 @@ logs/
 # Other common files to exclude
 .eslintrc*
 .prettierrc*
-tsconfig.json
 jest.config.*
-*.config.js
-*.config.ts
+# Keep essential Nuxt files
+!nuxt.config.ts
+!tsconfig.json

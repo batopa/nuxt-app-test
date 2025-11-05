@@ -16,6 +16,9 @@ RUN npm ci
 # Copy the rest of the application AFTER installing dependencies
 COPY . ./
 
+# Prepare Nuxt (generates .nuxt directory with auto-imports)
+RUN npm run postinstall
+
 # Build the application with all dependencies available
 RUN npm run build
 
